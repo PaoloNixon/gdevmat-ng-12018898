@@ -33,28 +33,28 @@ void draw()
     walkers[i].render();
     
     //Follows the mouse
-    //if(walkers[i].position.x < mouse.x)
-    //{
-    //  walkers[i].acceleration.x = 0.2;
-    //}
-    //if(walkers[i].position.x > mouse.x)
-    //{
-    //  walkers[i].acceleration.x = -0.2;
-    //}
-    //if(walkers[i].position.y < mouse.y)
-    //{
-    //  walkers[i].acceleration.y = 0.2;
-    //}
-    //if(walkers[i].position.y > mouse.y)
-    //{
-    //  walkers[i].acceleration.y = -0.2;
-    //}
+    if(walkers[i].position.x < mouse.x)
+    {
+      walkers[i].acceleration.x = 0.2;
+    }
+    if(walkers[i].position.x > mouse.x)
+    {
+      walkers[i].acceleration.x = -0.2;
+    }
+    if(walkers[i].position.y < mouse.y)
+    {
+      walkers[i].acceleration.y = 0.2;
+    }
+    if(walkers[i].position.y > mouse.y)
+    {
+      walkers[i].acceleration.y = -0.2;
+    }
     
     
     //Goes to the direction
     //walkers[i].checkEdges();
     //walkers[i].acceleration.x = direction.x;
     //walkers[i].acceleration.y = direction.y;
-
+  }
   println(direction.x);
 }
