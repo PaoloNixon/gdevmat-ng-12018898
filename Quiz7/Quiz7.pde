@@ -56,5 +56,6 @@ void draw()
     //walkers[i].acceleration.x = direction.x;
     //walkers[i].acceleration.y = direction.y;
   }
+  
   println(direction.x);
 }

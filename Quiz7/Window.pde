@@ -9,4 +9,5 @@ public static class Window
       public static int left = -windowWidth;
       public static int right = windowWidth;
       public static float eyeZ = -(heightPx/2.0) / tan(PI*30.0 / 180.0);
+      
 }
