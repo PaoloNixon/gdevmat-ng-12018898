@@ -36,6 +36,13 @@ void draw()
     friction.mult(frictionMagnitude);
     walkers[i].applyForce(friction);
     
+    if (mousePressed)
+    {
+      walkers[i].velocity = new PVector(0, 0);
+      int posY = 2 * ((Window.windowHeight / 2)/ walkers.length) * (i - (walkers.length/2));
+      walkers[i].position = new PVector(-600, posY);
+    }
+    
     //PVector gravity = new PVector(0.2 * walkers[i].mass, 0);
     walkers[i].render();
     walkers[i].update();
